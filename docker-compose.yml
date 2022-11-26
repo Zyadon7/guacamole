@@ -1,1 +1,9 @@
-asd
+# https://hub.docker.com/r/oznu/guacamole/
+version: '2'
+services:
+  guacamole:
+    image: oznu/guacamole
+    ports:
+      - "${PORT}:8080"
+    volumes:
+      - "${VOLUME}:/config:rw"
